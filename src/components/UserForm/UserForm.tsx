@@ -1,5 +1,5 @@
-import {User, UserFormData} from '../../types';
 import React, {useState} from 'react';
+import {User, UserFormData} from '../../types';
 
 interface Props {
   onSubmit: (user: User) => void;
