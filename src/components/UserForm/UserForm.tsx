@@ -54,6 +54,7 @@ const UserForm: React.FC<Props> = ({onSubmit}) => {
           name="name"
           id="name"
           className="form-control"
+          required={true}
           value={user.name}
           onChange={changeUser}
         />
@@ -65,6 +66,7 @@ const UserForm: React.FC<Props> = ({onSubmit}) => {
           name="email"
           id="email"
           className="form-control"
+          required={true}
           value={user.email}
           onChange={changeUser}
         />
@@ -88,6 +90,7 @@ const UserForm: React.FC<Props> = ({onSubmit}) => {
           name="role"
           value={user.role}
           onChange={changeUser}
+          required={true}
         >
           <option value="">Choose one</option>
           <option value="user">User</option>

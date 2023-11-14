@@ -22,7 +22,11 @@ const App = () => {
             <UserForm onSubmit={addUser}/>
           </div>
           <div className="col-6">
-            <Users users={users}/>
+            { users.length > 0 ?
+              <Users users={users}/>
+              :
+              <p className="alert alert-warning">No users</p>
+            }
           </div>
         </div>
       </main>
